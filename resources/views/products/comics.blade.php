@@ -1,4 +1,4 @@
-@extends('layout/main')
+@extends('layout.main')
 
 @section('title', 'comics')
 
@@ -8,9 +8,14 @@
         <a href="#" class="title-series bg-blue">CURRENT SERIES</a>
     </div>
     <div class="container card-container">
-        <ul>
-            <li>super-man</li>
-        </ul>
+        @foreach($comics as $comic)
+            <div class="cards">
+                <div class="thumb">
+                    <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
+                </div>
+                <h4>{{$comic['series']}}</h4>
+            </div>
+        @endforeach
     </div>
     <div class="container load-more">
         <a href="#" class="bg-blue btn-load">LOAD MORE</a>

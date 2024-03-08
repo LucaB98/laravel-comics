@@ -1,1 +1,3 @@
-@extends('layout/main')
+@extends('layout.main')
+
+@section('title', 'characters')
