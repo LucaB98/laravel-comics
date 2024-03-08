@@ -1,0 +1,33 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bg-blue {
+    background-color: #0C7CEC;
+    color: white;
+}
+
+.title-series {
+    padding: 10px;
+    font-size: 25px;
+
+    position: relative;
+    bottom: 15px;
+}
+
+.load-more {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    font-size: 12px;
+}
+
+.btn-load {
+    padding: 10px 40px;
+}
+
+.cards {
+    flex-basis: calc(100% / 6);
+
+}

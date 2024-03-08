@@ -1,1 +1,9 @@
-@import '~bootstrap/scss/bootstrap';
+// @import '~bootstrap/scss/bootstrap';
+
+@use 'utils';
+@use 'main';
+@use 'header';
+@use 'footer';
+@use 'generic';
+@use 'reset';
+@use 'jumbo';
