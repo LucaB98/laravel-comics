@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+// Route::get('/', function () {
+//     return view('home');
+// })->name('home');
 
 // comics
 Route::get('/comics', function () {
@@ -24,6 +24,14 @@ Route::get('/comics', function () {
 
     return view('products.comics', compact('comics'));
 })->name('comics');
+
+// comics
+Route::get('/comic', function () {
+
+    $comics = config('comics');
+    
+    return view('products.show', ['comic' => $comics[0]]);
+})->name('comic');
 
 // characters
 Route::get('/characters', function () {

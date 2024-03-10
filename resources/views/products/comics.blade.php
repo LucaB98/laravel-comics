@@ -10,10 +10,12 @@
     <div class="container card-container">
         @foreach($comics as $comic)
             <div class="cards">
-                <div class="thumb">
-                    <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
-                </div>
-                <h4>{{$comic['series']}}</h4>
+                <a href="{{route('comic')}}">
+                    <div class="thumb">
+                        <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
+                    </div>
+                    <h4>{{$comic['series']}}</h4>
+                </a>
             </div>
         @endforeach
     </div>
