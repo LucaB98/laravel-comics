@@ -26,11 +26,11 @@ Route::get('/comics', function () {
 })->name('comics');
 
 // comics
-Route::get('/comic', function () {
+Route::get('/comics/{index}', function ($index) {
 
     $comics = config('comics');
     
-    return view('products.show', ['comic' => $comics[0]]);
+    return view('products.show', ['comic' => $comics[$index]]);
 })->name('comic');
 
 // characters

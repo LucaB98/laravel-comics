@@ -8,9 +8,9 @@
         <a href="#" class="title-series bg-blue">CURRENT SERIES</a>
     </div>
     <div class="container card-container">
-        @foreach($comics as $comic)
+        @foreach($comics as $index => $comic)
             <div class="cards">
-                <a href="{{route('comic')}}">
+                <a href="{{route('comic', ['index' => $index])}}">
                     <div class="thumb">
                         <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
                     </div>

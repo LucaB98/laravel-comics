@@ -40,7 +40,7 @@
 }
 
 .figure {
-    height: 200px;
+    height: auto;
     width: 200px;
 
     position: absolute;
@@ -48,7 +48,13 @@
     bottom: 460px;
     left: 0;
 
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
+
+
 
 .title-comic {
     padding-top: 30px;
